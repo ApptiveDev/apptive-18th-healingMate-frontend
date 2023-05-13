@@ -1,0 +1,58 @@
+.join {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.joinMain {
+  margin-top: 180px;
+  position: relative;
+}
+
+.joinLogo {
+  margin-left: 10px;
+}
+
+.JoinName_,
+.JoinId_,
+.JoinPassword_,
+.JoinCheck_ {
+  width: 350px;
+  height: 20px;
+  border-radius: 10px;
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: 700px;
+  border-color: beige;
+  background-color: white;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.JoinName,
+.JoinId,
+.JoinPassword,
+.JoinCheck {
+  border-radius: 10px;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border-color: beige;
+  border: none;
+  outline: none;
+
+  label {
+    margin-bottom: 33px; /* 라벨 간격 */
+  }
+}
+
+.joinNext button {
+  margin-top: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: -3px;
+}
