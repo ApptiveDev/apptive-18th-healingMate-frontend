@@ -1,83 +1,81 @@
 .navbar {
   position: fixed;
-	height: 20vh;
-	width: 100vw;
-	background-color: #FFFFFF;
-	display: flex;
-	justify-content: space-between;
-	z-index: 100;
+  height: 20vh;
+  width: 100vw;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
 }
 
 .navbar_mainlink {
   height: 100%;
-	width: 20%;
-	margin-left: 70px;
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  width: 20%;
+  margin-left: 70px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar_list {
   height: 100%;
-	width: 80%;
-	display: flex;
-	justify-content: right;
-	align-items: center;
-	margin-right: 2%;
+  width: 80%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 2%;
 }
 
 .navbar_list_item {
   height: 100%;
-	width: fit-content;
-	margin-left: 35px;
-	margin-right: 35px;
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: black;
-	font-family: 'NanumSquareRound';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 29px;
-	&:hover {
-		color:#6CFFCA;
-		
-		
-	}
+  width: fit-content;
+  margin-left: 35px;
+  margin-right: 35px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  &:hover {
+    color: #6cffca;
+  }
 }
 
 .navbar_button {
-	height: 47px;
-	width: 116px;
-	text-decoration: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-style: none;
-	background-image: url(../images/button_rectangle.png);
-	background-color: transparent;
-	background-size: cover;
-	font-style: normal;
-	&.login_button {
-		margin-left: 20px;
-		margin-right: 10px;
-	}
-	&.join_button {
-		margin-right: 20px;
-		margin-right: 70px; 
-	}
-	.button_text {
-		color: black;
-		font-family: 'NanumSquareRound';
-		font-style: normal;
-		font-weight: 600;
-		font-size: 17px;
-		line-height: 29px;
-		&:hover {
-			color: #686868;
-		}
-	}
+  height: 47px;
+  width: 116px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  background-image: url(../images/button_rectangle.png);
+  background-color: transparent;
+  background-size: cover;
+  font-style: normal;
+  &.login_button {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  &.join_button {
+    margin-right: 20px;
+    margin-right: 70px;
+  }
+  .button_text {
+    color: black;
+    font-family: "NanumSquareRound";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 29px;
+    &:hover {
+      color: #686868;
+    }
+  }
 }

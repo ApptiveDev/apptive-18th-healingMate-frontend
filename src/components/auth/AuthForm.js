@@ -4,6 +4,8 @@ import Button from "../common/Button";
 import BorderButton from "../common/BorderButton";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import login_button from "../../images/login_login.png";
+import "./AuthForm.scss";
 
 const AuthFormBlock = styled.div`
   width: 100%;
@@ -13,14 +15,14 @@ const AuthFormBlock = styled.div`
     margin: 0;
     color: black;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 5px;
     margin-bottom: 0.3rem;
   }
 `;
 
 const StyledInput = styled.input`
   font-size: 13px;
-  height: 2.6rem;
+  height: 26px;
   width: 310px;
   border: none;
   background-color: #ffffff;
@@ -114,12 +116,12 @@ const AuthForm = () => {
           onChange={onChange}
           value={password}
         />
-        <div style={{ "margin-top": "20px" }}>
+        <div className="button_row">
           <Link to={"/login"}>
-            <Button onClick={handleLogin}>로그인</Button>
+            <button className="button login_button"></button>
           </Link>
           <Link to={"/join"}>
-            <BorderButton>회원가입</BorderButton>
+            <button className="button join_button"></button>
           </Link>
         </div>
       </form>

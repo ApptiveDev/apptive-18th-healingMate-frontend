@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../../images/login_symbol.png"
+import logo from "../../images/login_symbol.png";
 
 const AuthTemplateBlock = styled.div`
   position: absolute;
@@ -23,7 +23,7 @@ const Box = styled.div`
     font-weight: bold;
     letter-spacing: 2px;
   }
-  padding: 2rem;
+  padding-top: 20vh;
   width: 360px;
 `;
 
@@ -33,7 +33,7 @@ const AuthTemplate = ({ children }) => {
       <Box>
         <div className="logo-area">
           <Link to="/" className="login_logo">
-            <img alt="login_logo" src={logo} style={{"height": "11rem"}} />
+            <img alt="login_logo" src={logo} style={{ height: "11rem" }} />
           </Link>
         </div>
         {children}
