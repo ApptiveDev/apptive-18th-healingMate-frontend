@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Button from "../common/Button";
-import BorderButton from "../common/BorderButton";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import login_button from "../../images/login_login.png";
 import "./AuthForm.scss";
 
 const AuthFormBlock = styled.div`
@@ -118,7 +115,10 @@ const AuthForm = () => {
         />
         <div className="button_row">
           <Link to={"/login"}>
-            <button className="button login_button"></button>
+            <button
+              onClick={handleLogin}
+              className="button login_button"
+            ></button>
           </Link>
           <Link to={"/join"}>
             <button className="button join_button"></button>
