@@ -1,0 +1,35 @@
+.squareBorder {
+  width: 305px;
+  height: 380px;
+  z-index: 1;
+  position: relative;
+  padding: 20px;
+}
+
+.squareButton {
+  background-image: url(../../../public/images/test_square.png);
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  margin-top: 230px;
+  width: 305px;
+  height: 50px;
+  position: absolute;
+  padding-top: 200px;
+  z-index: 3;
+}
+
+.textBox {
+  height: 115px;
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 20px;
+  padding-top: 35px;
+  width: 200px;
+  background: linear-gradient(to right, #6cffca, #7cf7ff);
+  color: transparent;
+  font-size: 30px;
+  -webkit-background-clip: text;
+  z-index: 5;
+}
