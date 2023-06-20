@@ -7,17 +7,15 @@ const StyledSquare = styled.div`
   height: 50px;
   font-color: black;
   font-size: 18px;
-  font-weight: 500;
-  font-family: "NanumSquareNeo";
-  margin-top: 20vh;
+  font-weight: bold;
+  font-family: "NanumSquareRound";
   text-align: right;
+  justify-content: center;
+  align-items: right;
+  padding-top: 18vh;
   background: linear-gradient(to right, #6cffca, #7cf7ff);
 `;
 
-const TitleSquare = (props) => {
-  <StyledSquare>
-    <text>...props</text>
-  </StyledSquare>;
-};
+const TitleSquare = (props) => <StyledSquare {...props} />;
 
 export default TitleSquare;

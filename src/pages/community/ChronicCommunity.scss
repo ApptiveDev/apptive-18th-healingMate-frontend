@@ -1,0 +1,50 @@
+.titleLeft {
+  border: none;
+  width: 365px;
+  height: 57px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "NanumSquareRound";
+  text-align: left;
+  position: relative;
+  justify-content: center;
+  align-items: right;
+  padding-top: 17vh;
+  background: linear-gradient(to right, #6cffca, #7cf7ff);
+  .p {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.chronicBox {
+  align-items: end;
+  align-content: end;
+  .chronic {
+    width: 365px;
+    height: fit-content;
+    border: solid 3px;
+    margin-right: -6px;
+    border-image: linear-gradient(to right, #6cffca, #7cf7ff);
+    border-image-slice: 1;
+  }
+
+  .category {
+    width: 365px;
+  }
+
+  .categoryText {
+    text-decoration: none;
+    text-align: start;
+    font-family: "Inter";
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 30px;
+    align-content: end;
+    align-items: end;
+    align-self: end;
+  }
+}
