@@ -1,0 +1,54 @@
+.JoinButton{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.Gender,
+.Age,
+.Disease
+ {
+  border-radius: 10px;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border-color: beige;
+  border: none;
+  outline: none;
+
+  label {
+    margin-bottom: 33px; /* 라벨 간격 */
+  }
+}
+
+.join2Gender,
+.join2Age
+{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 700px;
+  border-color: beige;
+  background-color: white;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  
+  
+}
+
+.join2Disease{
+  width: 220px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 700px;
+  border-color: beige;
+  background-color: white;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
