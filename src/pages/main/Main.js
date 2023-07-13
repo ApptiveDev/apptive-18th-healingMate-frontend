@@ -1,8 +1,10 @@
 
+
 import React from 'react';
 import NavBar from '../../components/NavBar';
 
 
+import React from "react";
 
 import "./Main.scss";
 import bigLogo from '../../images/hm_bigLogo.png';
@@ -70,9 +72,11 @@ function Main(){
         </button>
       </div>
 
+
     </div>
   )
 }
+
 
 const main = () => {
   return <div className="main"></div>;
