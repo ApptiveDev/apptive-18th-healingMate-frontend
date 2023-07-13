@@ -12,7 +12,7 @@ function CrohnicMain(){
     const tabContArr = [
         {
             tabTitle:(
-                <li  className={activeIndex===0 ? "is-active" : ""} onClick={()=>tabClickHandler(0)}> 질병정보 </li>
+                <button  className= "tabInfo1" onClick={()=>tabClickHandler(0)}> 질병정보 </button>
             ),
             tabCont:(
                 <div> <CrohnicInfo/> </div>
@@ -20,7 +20,7 @@ function CrohnicMain(){
         },
         {
             tabTitle:(
-                <li className={activeIndex===0 ? "is-active" : ""} onClick={()=>tabClickHandler(1)}>게시판 </li>
+                <button className="tabBoard1"  onClick={()=>tabClickHandler(1)}>게시판 </button>
             ),
             tabCont:(
                 <div> <CrohnicBoard/> </div>
@@ -36,14 +36,16 @@ function CrohnicMain(){
 
       
       return (
-        <div>
-        <ul className="tabs is-boxed">
+        <div className='tab1'>
+
+
+        <ul className="tabs1">
             {tabContArr.map((section, index)=>{
                 return section.tabTitle
             })}
         </ul>
         
-        // activeIndex의 탭콘트만 보여줌!
+    
         <div>
             { tabContArr[activeIndex].tabCont }
         </div>

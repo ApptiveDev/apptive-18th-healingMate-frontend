@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Button from "../common/Button";
-import BorderButton from "../common/BorderButton";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import "./AuthForm.scss";
 
 const AuthFormBlock = styled.div`
   width: 100%;
@@ -11,14 +12,14 @@ const AuthFormBlock = styled.div`
     margin: 0;
     color: black;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 5px;
     margin-bottom: 0.3rem;
   }
 `;
 
 const StyledInput = styled.input`
   font-size: 13px;
-  height: 2.6rem;
+  height: 26px;
   width: 310px;
   border: none;
   background-color: #ffffff;
@@ -36,15 +37,72 @@ const StyledInput = styled.input`
 `;
 
 const AuthForm = () => {
+  const [loginInput, setLoginInput] = useState({
+    nickname: "",
+    password: "",
+  });
+
+  const onChange = (e) => {
+    console.log(e.target.value);
+    setLoginInput({
+      ...loginInput,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const { nickname, password } = loginInput;
+
+  const getLoginInfo = () => {
+    const accessToken = localStorage.getItem("accessToken");
+    return { accessToken };
+  };
+
+  const [accessToken, setAccessToken] = useState(null);
+
+  useEffect(() => {
+    const { accessToken } = getLoginInfo();
+    setAccessToken(accessToken);
+  }, []);
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    axios
+      .post(
+        "http://43.201.163.27:8080/login",
+        {
+          memberNickname: nickname,
+          password: password,
+        },
+        {
+          headers: { "Content-Type": "application/json" },
+        }
+      )
+      .then(onLoginSuccess)
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
+
+  function onLoginSuccess(response) {
+    const { accessToken } = response.data;
+    localStorage.setItem("accessToken", accessToken);
+    console.log(accessToken);
+
+    axios.defaults.headers.common["Authorization"] = `Bearer ${accessToken}`;
+    console.log(response);
+  }
+
   return (
     <AuthFormBlock>
       <form>
         <h3>닉네임</h3>
         <StyledInput
-          autoComplete="username"
-          name="username"
+          autoComplete="nickname"
+          name="nickname"
           placeholder="닉네임"
-          type="text"
+          type="String"
+          onChange={onChange}
+          value={nickname}
         />
         <h3 style={{ "margin-top": "20px" }}>비밀번호</h3>
         <StyledInput
@@ -52,13 +110,18 @@ const AuthForm = () => {
           name="password"
           placeholder="비밀번호"
           type="password"
+          onChange={onChange}
+          value={password}
         />
-        <div style={{ "margin-top": "20px" }}>
+        <div className="button_row">
           <Link to={"/login"}>
-            <Button>로그인</Button>
+            <button
+              onClick={handleLogin}
+              className="button login_button"
+            ></button>
           </Link>
           <Link to={"/join"}>
-            <BorderButton>회원가입</BorderButton>
+            <button className="button join_button"></button>
           </Link>
         </div>
       </form>

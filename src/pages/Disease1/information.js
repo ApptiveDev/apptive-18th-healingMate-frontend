@@ -15,6 +15,7 @@ function CrohnicInfo(){
             <div className='EngnameDisease1'>(Chronic renal failure)</div>
             </div>
 
+          
             <div className="info1_box"
         style={{
             border: '2px solid',

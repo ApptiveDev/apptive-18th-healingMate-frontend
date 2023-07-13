@@ -1,5 +1,9 @@
+
 import React from 'react';
 import NavBar from '../../components/NavBar';
+
+
+
 import "./Main.scss";
 import bigLogo from '../../images/hm_bigLogo.png';
 import HeadLine from '../../images/hm_headline.png';
@@ -65,11 +69,14 @@ function Main(){
         <img alt='testButton' src={testButton}></img>
         </button>
       </div>
-      
-
 
     </div>
   )
 }
+
+const main = () => {
+  return <div className="main"></div>;
+};
+
 
 export default Main;
