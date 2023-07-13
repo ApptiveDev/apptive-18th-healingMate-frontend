@@ -1,5 +1,71 @@
 .main {
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.homeLogo{
+	margin-top: 450px;
+	margin-right: 1000px;
+	position:absolute;
+}
+
+.headline{
+	margin-top: 600px;
+	margin-right: 1000px;
+	position:absolute;
+}
+
+.cmBar{
+	position:absolute;
+	margin-top: 180px;
+	margin-right: 120px;
+}
+
+.cmRec{
+	position:absolute;
+	margin-top: 260px;
+	margin-right: 120px;
+}
+.historyBar{
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 750px;
+}
+.historyRec{
+	position: absolute;
+	margin-top: 260px;
+	margin-left: 750px;
+}
+
+.testBar{
+	position: absolute;
+	margin-left: 750px;
+	margin-top: 490px;
+}
+.testRec{
+	position: absolute;
+	margin-left: 750px;
+	margin-top: 565px;
+}
+.testButton, 
+.testImg{
+	position: absolute;
+	
+	margin-top: 610px;
+}
+
+.testButton{
+	margin-left: 940px;
+}
+.testImg{
+	margin-left: 750px;
+}
+.testBut{
+	border: none;
+	outline: none;
+	background-color: transparent;
 }

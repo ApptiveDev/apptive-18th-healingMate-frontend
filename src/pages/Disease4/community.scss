@@ -1,0 +1,57 @@
+.board4{
+    display: flex;
+    
+  
+}
+
+.name4_box{
+    margin-top: 180px;
+    margin-left: 210px;
+    position: relative;
+    
+}
+.nameDisease4{
+    font-weight: 800;
+    font-size: 40px;
+}
+.EngnameDisease4{
+
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.board4_box{
+    margin-top: 280px;
+    position: absolute;
+    height: 625px;
+    width: 1200px;  
+    margin-left: 170px;
+}
+
+.WriteButton{
+    background-color: white;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: #6CFFCA;
+    width: 100px;
+    height: 35px;
+    margin-top: 570px;
+    margin-left: 1055px;
+    font-weight: 800;
+    position: relative;
+}
+
+.searchBox{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 30px;
+    position: relative;
+    margin-top: -35px;
+    border-width: 10px;
+}
+
+.searchIcon{
+    position: relative;
+}
+
