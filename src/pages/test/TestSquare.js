@@ -19,7 +19,11 @@ const TestSquare = (e) => {
       <input
         type="button"
         className="squareButton"
+
+        onClick={buttonClick}
+       
         onClick="buttonClick();"
+
       ></input>
       <div className="textBox">{e.name}</div>
     </div>

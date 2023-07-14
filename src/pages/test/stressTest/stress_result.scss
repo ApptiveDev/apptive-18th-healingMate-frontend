@@ -1,0 +1,119 @@
+.stressResultP1{
+    display: flex;
+    position: relative;
+}
+
+.StressScore{
+    margin-top: 220px;
+    position: relative;
+}
+
+.stress_score_1,.stress_score_2{
+    font-size: 25px;
+    position: absolute;
+    font-weight: 500;
+    
+}
+
+.stress_score{
+    font-size: 35px;
+    font-weight: bolder;
+    position: absolute;
+    margin-left: -260px;
+    margin-top: 45px;
+}
+
+.stress_score_1{
+    margin-left: -324px;
+}
+
+.stress_score_2{
+    margin-left: -170px;
+    margin-top: 55px;
+}
+
+.stressResult1{
+    margin-top: 350px;
+    margin-left: -748px;
+
+}
+
+.resultLine_{
+    margin-top: 535px;
+    margin-left: 140px;
+    position: absolute;
+}
+
+.testComment1,.testComment2,.testComment3,.testComment4,.testComment5,.testComment6,.testComment7{
+    position: absolute;
+    font-size: 25px;
+}
+
+.testComment1{
+    margin-top: 600px;
+    margin-left: 225px;
+}
+
+.testComment2{
+    margin-top: 690px;
+    margin-left: 235px;
+    font-weight: 600;
+}
+
+.testComment3{
+    margin-top: 730px;
+    margin-left: 245px;
+}
+
+.testComment4{
+    margin-top: 880px;
+    margin-left: 225px;
+    font-weight: 600;
+}
+
+.testComment5{
+    margin-top: 920px;
+    margin-left: 245px;
+}
+
+.testComment6{
+    margin-top: 975px;
+    font-weight: 600;
+    margin-left: 225px;
+}
+
+.testComment7{
+    margin-top: 1020px;
+    margin-left: 245px;
+}
+
+.resultLine__{
+    margin-top: 1120px;
+    margin-left: 140px;
+    position: absolute;
+}
+
+.otherTest1{
+    margin-top: 1200px;
+    font-size: 35px;
+    font-weight: bolder;
+    position: absolute;
+    margin-left: 620px;
+}
+
+
+.burnoutButton1{
+    position: absolute;
+    margin-top: 1180px;
+    margin-left: -1080px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.depressionButton1{
+    position: absolute;
+    margin-top: 1180px;
+    margin-left: -300px;
+    background-color: transparent;
+    border-color: transparent;
+}

@@ -1,0 +1,27 @@
+.tab4{
+    display: flex;
+
+}
+
+.tabs4{
+    margin-top: 235px;
+    margin-left: 1060px;
+    position: absolute;
+  
+}
+
+.tabInfo4,.tabBoard4{
+    width: 120px;
+    height: 47px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight:bolder;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.tabInfo4:active,
+.tabBoard4:active {
+  /* 버튼을 눌렀을 때의 스타일 설정 */
+  background: linear-gradient(90deg, #6CFFCA 0%, #7CF7FF 100%);
+}
