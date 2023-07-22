@@ -1,0 +1,32 @@
+.button_row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+  margin-top: 20px;
+}
+
+.button {
+  height: 55px;
+  width: 161px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  background-color: transparent;
+  background-size: cover;
+  &.login_button {
+    background-image: url(../../images/login_login.png);
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  &.join_button {
+    background-image: url(../../images/login_join.png);
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  &:hover {
+    color: #686868;
+  }
+}
