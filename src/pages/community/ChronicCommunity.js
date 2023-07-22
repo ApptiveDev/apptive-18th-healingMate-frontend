@@ -50,7 +50,7 @@ const ChronicCommunity = () => {
             return (
               <div className="category" style={{ "margin-top": "15px" }}>
                 <Link
-                  to={`/community/${a.id}`}
+                  to={`/${a.id}`}
                   key={chronicCategory.id}
                   style={{
                     textDecoration: "none",
