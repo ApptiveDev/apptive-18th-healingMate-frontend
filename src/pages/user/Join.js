@@ -11,9 +11,7 @@ import axios from 'axios';
 function Join() {
   const navigate = useNavigate();
 
-  const headers = {
-    'Content-Type': 'application/json'
-  };
+
 
   const [memberNickname, setMemberNickname] = useState('');
   const [pwd1, setPwd1] = useState('');
@@ -22,21 +20,27 @@ function Join() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const signUpData = {
+    const jsonData = {
       memberNickname: memberNickname,
       pwd1: pwd1,
-      pwd2: pwd2
+      pwd2: pwd2,
+      key: 'validationCheck' // 토큰을 JSON 데이터에 추가
     };
 
-    axios.post('http://43.201.163.27:8080/member/join/1', signUpData, { headers })
-      .then(response => {
-        console.log(response.data);
-      })
-      .catch(error => {
-        console.log(error);
-      });
+    // axios를 사용하여 JSON 데이터를 본문에 포함하여 요청 전송
+    axios.post('http://43.201.163.27:8080/member/join/1', jsonData, {
+      headers: {
+        'Content-Type': 'application/json', // JSON 데이터 전송을 위한 헤더 설정
+      }
+    })
+    .then(response => {
+      console.log(response.data);
+    })
+    .catch(error => {
+      console.log(error);
+    });
   };
-
+    
   return (
     <div className="join">
       <form onSubmit={handleSubmit}>

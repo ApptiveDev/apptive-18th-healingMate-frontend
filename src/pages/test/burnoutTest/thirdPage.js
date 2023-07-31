@@ -354,8 +354,9 @@ function BurnoutTest3(){
 
                 <div className='testLine_'><img alt='testLine' src={line}></img></div>
 
+            
                 <button className='test_result'><img alt='resultButton' src={resultButton}></img></button>
-
+                
 
                 
 

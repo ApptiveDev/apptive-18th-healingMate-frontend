@@ -9,6 +9,7 @@ import CrohnicBoard from "./pages/Disease1/community";
 import CrohnicMain from "./pages/Disease1/index";
 import CrohnInfo from "./pages/Disease2/information";
 import CrohnMain from "./pages/Disease2/index";
+import BoardWrite from "./pages/community/board/BoardWrite";
 
 import RetinitisInfo from "./pages/Disease3/information";
 import RetinitisMain from "./pages/Disease3/index";
@@ -32,6 +33,8 @@ import DepressionTest1 from "./pages/test/depressionTest/firstPage";
 import DepressionTest2 from "./pages/test/depressionTest/secondPage";
 import DepressionResult from "./pages/test/depressionTest/depression_result";
 import DepressionResult2 from "./pages/test/depressionTest/depression_result_2";
+
+import Community from "./pages/community/Community";
 function App() {
   return (
     <BrowserRouter>
@@ -42,23 +45,27 @@ function App() {
         <Route path="/*" element={<MainRoute />} />
         <Route path="/join" element={<Join />} />
         <Route path="/join2" element={<Join2 />} />
+
+        <Route path="/write" element={<BoardWrite/>}/>
+
+        <Route path="/community" element={<Community/>}/>
         
         //만성콩팥병
         <Route path="/crohnicInfo" element={<CrohnicInfo />} />
         <Route path="/crohnicBoard" element={<CrohnicBoard />}/>
-        <Route path="/crohnicMain" element={<CrohnicMain />}/>
+        <Route path="/1" element={<CrohnicMain />}/>
 
         //크론병
         <Route path="/crohnInfo" element={<CrohnInfo/>} />
-        <Route path="/crohnMain" element={<CrohnMain />}/>
+        <Route path="/community/1" element={<CrohnMain />}/>
 
         //망막색소변성증
         <Route path="/retinitisInfo" element={<RetinitisInfo/>} />
-        <Route path="/retinitisMain" element={<RetinitisMain />}/>
+        <Route path="/community/2" element={<RetinitisMain />}/>
 
         //콜린병
         <Route path="/cholinInfo" element={<CholinInfo/>} />
-        <Route path="/cholinMain" element={<CholinMain/>} />
+        <Route path="/2" element={<CholinMain/>} />
 
         //검사
 
