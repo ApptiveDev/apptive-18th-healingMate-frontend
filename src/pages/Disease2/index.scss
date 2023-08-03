@@ -1,0 +1,27 @@
+.tab2{
+    display: flex;
+
+}
+
+.tabs2{
+    margin-top: 235px;
+    margin-left: 1060px;
+    position: absolute;
+  
+}
+
+.tabInfo2,.tabBoard2{
+    width: 120px;
+    height: 47px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight:bolder;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.tabInfo2:active,
+.tabBoard2:active {
+  /* 버튼을 눌렀을 때의 스타일 설정 */
+  background: linear-gradient(90deg, #6CFFCA 0%, #7CF7FF 100%);
+}
