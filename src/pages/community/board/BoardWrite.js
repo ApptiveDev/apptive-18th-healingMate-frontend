@@ -22,10 +22,15 @@ const categories = [
 
 const BoardWrite = () => {
   const [titleInput, setTitleInput] = useState("");
-  const [category, setCategory] = useState("");
+  const [contentInput, setContentInput] = useState("");
+  const [category, setCategory] = useState("daily");
 
   const onChange = (e) => {
     setTitleInput(e.target.value);
+  };
+
+  const onChangeContent = (e) => {
+    setContentInput(e.target.value);
   };
 
   return (
@@ -40,7 +45,9 @@ const BoardWrite = () => {
       <div className="CommuBoard">
         <div className="WriteTop">
           <View style={WriteStyles.Title}>
-            <span style={{ marginTop: "5px" }}>제&nbsp;&nbsp;&nbsp;목</span>
+            <span style={WriteStyles.Text}>
+              제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;목
+            </span>
             <input
               name="title"
               type="string"
@@ -50,13 +57,32 @@ const BoardWrite = () => {
             />
           </View>
           <View style={WriteStyles.Title}>
-            <span>카테고리</span>
+            <span style={WriteStyles.Text}>카테고리</span>
             <CategoryFilter
               categories={categories}
               category={category}
               setCategory={setCategory}
             />
           </View>
+        </div>
+        <div
+          style={{
+            borderBottom: "2px solid gray",
+            borderTop: "none",
+            borderLeft: "none",
+            borderRight: "none",
+            width: "1100px",
+            marginLeft: "35px",
+            height: "280px",
+          }}
+        >
+          <input
+            name="contentBox"
+            type="string"
+            onChange={onChangeContent}
+            value={contentInput}
+            className="contentBox"
+          ></input>
         </div>
       </div>
     </div>

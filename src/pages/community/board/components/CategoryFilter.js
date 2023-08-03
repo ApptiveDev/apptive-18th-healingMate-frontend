@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./CategoryFilter.scss";
 
 const CATEGORY = "CATEGORY";
 
@@ -10,7 +11,7 @@ const CategoryFilter = ({ categories, category, setCategory }) => {
       <div
         key={idx}
         className={
-          item.value === category ? "category-child selected" : "category-child"
+          item.value === category ? "categoryChild selected" : "categoryChild"
         }
         onClick={() => {
           setCategory(item.value);
