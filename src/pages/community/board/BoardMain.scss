@@ -13,7 +13,7 @@
   font-size: 30px;
   margin-left: 12%;
   width: 76%;
-  height: 510px;
+  height: 520px;
   border: 3px solid;
   border-image: linear-gradient(to right, #6cffca, #7cf7ff);
   border-image-slice: 1;
@@ -93,7 +93,7 @@
   padding: 5px;
   margin: 10px;
   margin-left: 30px;
-  border: 1px solid gray;
+  border: 2px solid gray;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -110,4 +110,19 @@
   margin-left: 20px;
   box-shadow: 2px 1px 8px -5px;
   border-radius: 2px;
+  margin-top: 5px;
+}
+
+.contentBox {
+  height: 250px;
+  width: 1080px;
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+  appearance: none;
+  text-align: left;
+  margin-left: 5px;
+  box-shadow: 2px 1px 8px -5px;
+  border-radius: 2px;
+  margin-top: 5px;
 }

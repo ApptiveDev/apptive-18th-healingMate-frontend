@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import box from "../../../images/box.png";
+import box from "../../images/box.png";
 
 const Styles = StyleSheet.create({
   bigTitle: {
@@ -81,18 +81,15 @@ const ListStyles = StyleSheet.create({
 const WriteStyles = StyleSheet.create({
   Title: {
     width: "1050px",
-    padding: "4px",
-
+    padding: "5px",
+    margin: "10px",
     marginLeft: "30px",
     flexDirection: "row",
+    fontSize: "20px",
+    fontWeight: "bold",
 
     alignItems: "flex-start",
     justifyContent: "space-around",
-  },
-  Text: {
-    fontSize: "20px",
-    fontWeight: "bold",
-    marginTop: "10px",
   },
 });
 

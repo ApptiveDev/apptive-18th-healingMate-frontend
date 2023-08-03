@@ -1,0 +1,30 @@
+.categorySet {
+  width: 950px;
+  padding-left: 10px;
+}
+
+.categoryChild {
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: lighter;
+  justify-content: center;
+  padding-left: 0;
+  background-color: #d9d9d9;
+  flex-direction: row;
+  width: 70px;
+  font-size: 18px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.categoryChild:hover {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.selected {
+  border-style: none;
+  font-weight: 300;
+  background: linear-gradient(to right, #6cffca, #7cf7ff);
+}

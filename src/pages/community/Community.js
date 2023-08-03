@@ -51,14 +51,14 @@ const Community = () => {
           사람들과 소중한 경험과 노하우를 나누고
         </div>
         <br />
-        <div className="searchBox">
+        <div className="searchMainBox">
           <input
             placeholder="검색"
             name="search"
             type="search"
             onChange={onChange}
             value={searchInput}
-            className="searchInputBox"
+            className="searchMainInputBox"
           />
           <img src={search_icon} alt="search_icon" style={{ height: "20px" }} />
         </div>
