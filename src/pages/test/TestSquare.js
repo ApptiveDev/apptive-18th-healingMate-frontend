@@ -22,7 +22,7 @@ const TestSquare = (e) => {
 
         onClick={buttonClick}
        
-        onClick="buttonClick();"
+
 
       ></input>
       <div className="textBox">{e.name}</div>
